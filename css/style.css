@@ -80,6 +80,7 @@ body{
 .film{
     padding-top: 80px;
     padding-bottom: 80px;
+    border-bottom: 1px solid #D4D4D4;
 }
 .film-wrapper{
     display: flex;
@@ -138,6 +139,7 @@ body{
 }
 .about-film{
     display: flex;
+    margin-bottom: 50px;
 }
 .about-text{
     display: block;
@@ -158,4 +160,34 @@ body{
     line-height: 19px;
     color: #363636;
     margin-right: 60px;
+}
+.film-rating{
+    display: flex;
+}
+.rating-left{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #5671F6;
+    border: 1px solid #5671F6;
+    border-radius: 10px;
+    padding: 34px 24px 33px 23px;
+    margin-right: 28px;
+}
+.rating-title{
+    margin-top: 0;
+}
+.rating-grade{
+    display: block;
+    margin-bottom: 7px;
+}
+.rating-regular{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+.rating-bold{
+    font-weight: bold;
 }
