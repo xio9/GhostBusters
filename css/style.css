@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    color: #363636;
 }
 .header{
     display: flex;
@@ -71,4 +72,90 @@ body{
     color: #ffffff;
     background-color: #5671F6;
     border: none;
+}
+.container{
+    max-width: 1130px;
+    margin: auto;
+}
+.film{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.film-wrapper{
+    display: flex;
+}
+.film-trailer{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+.poster{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 358px;
+}
+.trailer-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #ffffff;
+    border: 1px solid #D4D4D4;
+    border-radius: 0px 0px 5px 5px;
+    outline: none;
+    color:  #5671F6;
+}
+.trailer-button-icon{
+    margin-right: 14px;
+    cursor: pointer;
+}
+.film-title{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+.film-subtitle{
+    display: block;
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #A5A5A5;
+}
+.film-description{
+    max-width: 514px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.about-film{
+    display: flex;
+}
+.about-text{
+    display: block;
+    margin-bottom: 16px;
+}
+.about-text-bold{
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #363636;
+}
+.about-text-regular{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #363636;
+    margin-right: 60px;
 }
