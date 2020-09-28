@@ -392,6 +392,7 @@ body{
     fill: #444;
     cursor: pointer;
  }
+ .card
 @media (max-width: 1200px) {
     .container {
       max-width: 960px;
