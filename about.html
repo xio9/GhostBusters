@@ -7,9 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,10 +20,10 @@
         <div class="line"></div>
         <input type="text" class="search-input" placeholder="Поиск по фильмам...">
         <nav class="navigation">
-            <a href="films.html" class="navigation-link">Фильмы</a>
-            <a href="#" class="navigation-link">Сериалы</a>
+            <a href="main.html" class="navigation-link">Главная</a>
+            <a href="index.html" class="navigation-link">Фильмы</a>
             <a href="#" class="navigation-link">Новости</a>
-            <a href="index.html" class="navigation-link">О сервисе</a>
+            <a href="about.html" class="navigation-link">О сервисе</a>
         </nav>
         <!-- /navigation -->
         <div class="button-group">
@@ -42,37 +44,21 @@
     <!-- /header -->
     <section class="films">
         <div class="container">
-            <div class="filmsCard-wrapper">
-                <div class="filmsCard">
-                    <div class="filmsCard__Video"></div>
-                    <div class="filmsCard__Content">
-                        <h2 class="filmsCard__Heading">12321321</h2>
-                        <div class="filmsCard__Text">321312312</div>
-                    </div>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">Slide 01</li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
                 </div>
-                <!-- /card -->
-                <div class="filmsCard">
-                    <div class="filmsCard__Video"></div>
-                    <div class="filmsCard__Content">
-                        <h2 class="filmsCard__Heading">312213123</h2>
-                        <div class="filmsCard__Text">321231132</div>
-                    </div>
-                </div>
-                <!-- /card -->
-                <div class="filmsCard">
-                    <div class="filmsCard__Video"></div>
-                    <div class="filmsCard__Content">
-                        <h2 class="filmsCard__Heading">1132132</h2>
-                        <div class="filmsCard__Text">132132</div>
-                    </div>
-                </div>
-                <!-- /card -->
             </div>
-            <!-- /cards-wrapper -->
+            <!-- /sldier -->
         </div>
         <!-- /container -->
     </section>
     <!-- /films -->
+    <script src="scripts/splide.min.js"></script>
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
