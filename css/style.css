@@ -445,11 +445,124 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.splide__slide {
+
+/* main */
+.film-wrap{
+  margin-top: 100px;
+  margin-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.film-card{
+  margin-right: 32px;
+  width: 250px;
+  height: 300px;
+}
+.film-img{
+  margin-bottom: 30px;
   width: 100%;
   height: 100%;
-  background: url('./img/cinema.jpg');
 }
+.film-name{
+  display: block;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 19px;
+  color: #363636;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.film-btns{
+  display: flex;
+  justify-content: space-between;
+}
+.btn-rat{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #5671F6;
+  border: 1px solid #5671F6;
+  border-radius: 5px;
+}
+.btn-go{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #5671F6;
+  border: 1px solid #5671F6;
+  border-radius: 5px;
+}
+.btn-go:hover{
+  transition: all 400ms;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
+  color: #fff;
+  background: #5671F6;
+}
+.film-card:hover{
+  transition: all ease 500ms;
+  box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.08);
+}
+.ymap-container {
+  width: 50%;
+  position: relative;
+  margin: 3em 0 2em 0;
+  overflow: hidden;
+  cursor: pointer;
+  background: url('./img/yandex-before-load-marker.jpeg') #ffffff no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
+}
+/* Блок, в котором появится Яндекс.Карта */
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 20em;
+  cursor: pointer;
+  background-color: transparent;
+}
+/* Индикатор загрузки, который показывается до загрузки карты */
+.loader {
+position: absolute;
+z-index: 15;
+top: -100%;
+left: 0;
+box-sizing: border-box;
+width: 100%;
+height: 100%;
+overflow: hidden;
+color: #000000;
+transition: opacity .7s ease;
+opacity: 0;
+background-color: rgba(0,0,0,.55);
+}
+
+.loader:after,
+.loader:before {
+box-sizing: border-box;
+}
+
+.loader.is-active {
+top: 0;
+opacity: 1;
+}
+
+.loader-default:after {
+position: absolute;
+top: calc(50% - 24px);
+left: calc(50% - 24px);
+width: 48px;
+height: 48px;
+content: '';
+animation: rotation 1s linear infinite;
+border: solid 8px #ffffff;
+border-left-color: transparent;
+border-radius: 50%;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

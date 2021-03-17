@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1cc1f8c2-125a-423a-acf6-66bff7efbd3d&lang=ru_RU"></script>
 </head>
 <body>
     <header class="header">
@@ -42,11 +43,124 @@
     <!-- /header -->
     <section class="films">
         <div class="container">
-            
+            <div class="film-wrap">
+                <div class="film-card">
+                    <img src="./img/The_Batman.jpg" class="film-img"></img>
+                    <div class="film-info">
+                        <span class="film-name">Бэтмен (The Batman)</span>
+                        <div class="film-btns">
+                            <div class="btn-rat">18+</div>
+                            <a href="#" class="btn-go">Открыть</a>
+                        </div>
+                    </div>
+                    <!-- /film-info -->
+                </div>
+                <!-- /film-card -->
+                <div class="film-card">
+                    <img src="./img/thor.jfif" class="film-img"></img>
+                    <div class="film-info">
+                        <span class="film-name">Тор: Любовь и гром</span>
+                        <div class="film-btns">
+                            <div class="btn-rat">12+</div>
+                            <a href="#" class="btn-go">Открыть</a>
+                        </div>
+                    </div>
+                    <!-- /film-info -->
+                </div>
+                <!-- /film-card -->
+                <div class="film-card">
+                    <img src="./img/spiderverse.jpg" class="film-img"></img>
+                    <div class="film-info">
+                        <span class="film-name">Человек-паук 3</span>
+                        <div class="film-btns">
+                            <div class="btn-rat">12+</div>
+                            <a href="#" class="btn-go">Открыть</a>
+                        </div>
+                    </div>
+                    <!-- /film-info -->
+                </div>
+                <!-- /film-card -->
+                <div class="film-card">
+                    <img src="./img/doctor.jpg" class="film-img"></img>
+                    <div class="film-info">
+                        <span class="film-name">Доктор Стрэндж 2</span>
+                        <div class="film-btns">
+                            <div class="btn-rat">12+</div>
+                            <a href="#" class="btn-go">Открыть</a>
+                        </div>
+                    </div>
+                    <!-- /film-info -->
+                </div>
+                <!-- /film-card -->
+            </div>
+            <!-- /card-wrap -->
+            <div class="film-wrap">
+                <div class="film-card">
+                    <img src="./img/No_Time_to_Die_poster.jpg" class="film-img"></img>
+                    <div class="film-info">
+                        <span class="film-name">007: Не время умирать</span>
+                        <div class="film-btns">
+                            <div class="btn-rat">18+</div>
+                            <a href="#" class="btn-go">Открыть</a>
+                        </div>
+                    </div>
+                    <!-- /film-info -->
+                </div>
+                <!-- /film-card -->
+                <div class="film-card">
+                    <img src="./img/Fast_&_Furious_9_(poster).jpg" class="film-img"></img>
+                    <div class="film-info">
+                        <span class="film-name">Форсаж 9</span>
+                        <div class="film-btns">
+                            <div class="btn-rat">16+</div>
+                            <a href="#" class="btn-go">Открыть</a>
+                        </div>
+                    </div>
+                    <!-- /film-info -->
+                </div>
+                <!-- /film-card -->
+                <div class="film-card">
+                    <img src="./img/indian.jpeg" class="film-img"></img>
+                    <div class="film-info">
+                        <span class="film-name">Индиана Джонс 5</span>
+                        <div class="film-btns">
+                            <div class="btn-rat">12+</div>
+                            <a href="#" class="btn-go">Открыть</a>
+                        </div>
+                    </div>
+                    <!-- /film-info -->
+                </div>
+                <!-- /film-card -->
+                <div class="film-card">
+                    <img src="./img/The_Batman.jpg" class="film-img"></img>
+                    <div class="film-info">
+                        <span class="film-name">Бэтмен (The Batman)</span>
+                        <div class="film-btns">
+                            <div class="btn-rat">18+</div>
+                            <a href="#" class="btn-go">Открыть</a>
+                        </div>
+                    </div>
+                    <!-- /film-info -->
+                </div>
+                <!-- /film-card -->
+            </div>
+            <!-- /card-wrap -->
         </div>
         <!-- /container -->
     </section>
     <!-- /films -->
+    <footer class="footer">
+        <div class="container">
+            <div class="ymap-container">
+                <div class="loader loader-default"></div>
+                <div id="map-yandex"></div>
+            </div>
+            <!-- .ymap-container -->
+        </div>
+        <!-- /container -->
+    </footer>
+    <!-- /footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
