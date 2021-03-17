@@ -43,6 +43,7 @@
     <!-- /header -->
     <section class="films">
         <div class="container">
+            <h1 class="heading">Название кинотеатра</h1>
             <div class="film-wrap">
                 <div class="film-card">
                     <img src="./img/The_Batman.jpg" class="film-img"></img>
@@ -151,11 +152,32 @@
     <!-- /films -->
     <footer class="footer">
         <div class="container">
-            <div class="ymap-container">
-                <div class="loader loader-default"></div>
-                <div id="map-yandex"></div>
+            <div class="footer-wrap">
+                <div class="ymap-container">
+                    <div class="loader loader-default"></div>
+                    <div id="map-yandex"></div>
+                </div>
+                <!-- .ymap-container -->
+                <div class="info-blocks">
+                    <div class="info-block">
+                        <span class="footer-text">Подписывайся</span>
+                        <div class="footer-icons">
+                            <a href="#"><img class="footer-icon" src="./img/inst.svg" alt=""></a>
+                            <a href="#"><img class="footer-icon" src="./img/vk.svg" alt=""></a>
+                        </div>
+                        <!-- /footer-icons -->
+                    </div>
+                    <!-- /info-block -->
+                    <div class="info-block">
+                        <span class="footer-text">Контакты</span>
+                        <span class="footer-mobile">По вопросам <a class="footer-email__mob" href="+7 495 590-82-86">+7 495 590-82-86</a></span>
+                        <span class="footer-email">Почта <a class="footer-email__a" href="mailto:info@unost-cinema.ru">info@unost-cinema.ru</a></span>
+                    </div>
+                    <!-- /info-block -->
+                </div>
+                <!-- /info-blocks -->
             </div>
-            <!-- .ymap-container -->
+            <!-- /footer-wrap -->
         </div>
         <!-- /container -->
     </footer>
@@ -168,5 +190,5 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/jquery.fancybox.min.js"></script>
     <script src="scripts/main.js"></script>
-</body>
+</body> 
 </html>

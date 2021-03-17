@@ -510,7 +510,7 @@ body {
   margin: 3em 0 2em 0;
   overflow: hidden;
   cursor: pointer;
-  background: url('./img/yandex-before-load-marker.jpeg') #ffffff no-repeat;
+  background: url('/./img/yandex-before-load-marker.jpg') #ffffff no-repeat;
   background-position: center center;
   background-size: cover;
   box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
@@ -561,6 +561,62 @@ animation: rotation 1s linear infinite;
 border: solid 8px #ffffff;
 border-left-color: transparent;
 border-radius: 50%;
+}
+
+.heading{
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 100px;
+  text-align: center;
+  color: #5671F6;
+}
+.footer-wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-blocks{
+  background: white;
+  box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
+}
+.info-block{
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+}
+.footer-text{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.footer-mobile{
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.footer-email{
+  font-size: 24px;
+}
+.footer-email__mob,
+.footer-email__a{
+  text-decoration: none;
+  margin-left: 5px;
+  color: #5671F6;
+}
+.footer-email__mob:hover,
+.footer-email__a:hover{
+  text-decoration: underline;
+}
+.footer-icons{
+  display: flex;
+  margin: 0 auto;
+}
+.footer-icon{
+  margin-right: 35px;
+  margin-top: 15px;
+  width: 48px;
+  height: 48px;
 }
 
 @media (max-width: 1200px) {
