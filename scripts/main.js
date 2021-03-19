@@ -33,7 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
         progress.style.height = progressHeight + "%";
       }
 
+
+      // slider
       // new Splide( '.splide' ).mount();
+
       //Ymap start
     var spinner = $('.ymap-container').children('.loader');
     var check_if_load = 0;

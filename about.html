@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/splide.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1cc1f8c2-125a-423a-acf6-66bff7efbd3d&lang=ru_RU"></script>
 </head>
 <body>
     <header class="header">
@@ -20,9 +21,9 @@
         <div class="line"></div>
         <input type="text" class="search-input" placeholder="Поиск по фильмам...">
         <nav class="navigation">
-            <a href="main.html" class="navigation-link">Главная</a>
+            <a href="films.html" class="navigation-link">Главная</a>
             <a href="index.html" class="navigation-link">Фильмы</a>
-            <a href="#" class="navigation-link">Новости</a>
+            <a href="news.html" class="navigation-link">Новости</a>
             <a href="about.html" class="navigation-link">О сервисе</a>
         </nav>
         <!-- /navigation -->
@@ -42,23 +43,54 @@
         <!-- /mobile-buttons -->
     </header>    
     <!-- /header -->
-    <section class="films">
+    <section class="cinema">
         <div class="container">
-            <div class="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide"><div>Slide 02</div></li>
-                        <li class="splide__slide"><div>Slide 02</div></li>
-                        <li class="splide__slide"><div>Slide 02</div></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /sldier -->
+            <h1 class="heading">Название кинотеатра</h1>
+            <h2 class="heading-normal">Немного о нас</h2>
+            <p class="cinema-text">Всех любителей и знатоков кино кинотеатр «Юность» в Одинцово приглашает на просмотр лучших западных и российских фильмов. В кинотеатре действуют четыре кинозала. Два из них находятся на первом этаже (зал № 1 на 415 мест и зал № 2 на 72 места) и три на втором этаже (зал № 3 на 78 мест, кинозал № 4 на 56 мест), открытые не так давно.</p>
+            <p class="cinema-text">Кинотеатр «Юность» — первый кинотеатр в области который по техническому оснащению и условиям, созданным для посетителей, не уступает кинотеатрам Москвы. Благодаря новейшей аппаратуре обеспечивается звук отличного качества, отделка кинозалов звукопоглощающими акустическими панелями не создает эха и вибрации звука, а удобные кресла максимально располагают к комфортному просмотру.
+            </p>
+            <p class="cinema-text">Кинотеатр «Юность» — излюбленное место проведения досуга жителей Одинцова. Подбор фильмов рассчитан на самую широкую аудиторию и возрастной диапазон, поэтому на просмотр в кинотеатр можно прийти всей семьей или молодежной компанией. В малом зале можно провести время в более домашней обстановке и посмотреть фильмы, которые уже сошли с больших экранов. В кинотеатре идут последние новинки мирового кинематографа, которые выходят на экраны кинотеатра «Юность» одновременно с Москвой. Перед началом сеанса все посетители кинотеатра в Одинцово смогут пообщаться друг с другом и перекусить в кафе-баре. На нашем сайте вы можете ознакомиться с афишей кинотеатра «Юность» и расписанием, что поможет вам спланировать свое время и с пользой провести свой досуг.
+            </p>
+            <p class="cinema-text">Благодаря продуманному подбору фильмов, приятной обстановке и удобному расположению кинотеатр «Юность» в Одинцово никогда не испытывает недостатка в посетителях. Если вы еще не были в нашем кинотеатре, мы приглашаем вас на просмотр и надеемся, что после этого вы будете проводить свой культурный досуг только в кинотеатре «Юность»!
+            </p>
         </div>
         <!-- /container -->
     </section>
-    <!-- /films -->
-    <script src="scripts/splide.min.js"></script>
+    <!-- /cinema -->
+    <footer class="footer-cinema">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="ymap-container">
+                    <div class="loader loader-default"></div>
+                    <div id="map-yandex"></div>
+                </div>
+                <!-- .ymap-container -->
+                <div class="info-blocks">
+                    <div class="info-block">
+                        <span class="footer-text">Подписывайся</span>
+                        <div class="footer-icons">
+                            <a href="#"><img class="footer-icon" src="./img/inst.svg" alt=""></a>
+                            <a href="#"><img class="footer-icon" src="./img/vk.svg" alt=""></a>
+                        </div>
+                        <!-- /footer-icons -->
+                    </div>
+                    <!-- /info-block -->
+                    <div class="info-block">
+                        <span class="footer-text">Контакты</span>
+                        <span class="footer-mobile">По вопросам <a class="footer-email__mob" href="+7 495 590-82-86">+7 495 590-82-86</a></span>
+                        <span class="footer-email">Почта <a class="footer-email__a" href="mailto:info@unost-cinema.ru">info@unost-cinema.ru</a></span>
+                    </div>
+                    <!-- /info-block -->
+                </div>
+                <!-- /info-blocks -->
+            </div>
+            <!-- /footer-wrap -->
+        </div>
+        <!-- /container -->
+    </footer>
+    <!-- /footer-cinema -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="sweetalert2.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>

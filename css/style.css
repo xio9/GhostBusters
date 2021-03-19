@@ -46,6 +46,7 @@ body {
   line-height: 21px;
   color: #363636;
   margin-right: 18px;
+  transition: all 0.5s ease-in-out;
 }
 .navigation-link:hover {
   color: #5671f6;
@@ -301,6 +302,9 @@ body {
   padding-bottom: 100px;
   background-color: #f3f3f3;
 }
+.footer-cinema {
+  background: #fff;
+}
 .news {
   margin-bottom: 65px;
   font-style: normal;
@@ -447,23 +451,27 @@ body {
 }
 
 /* main */
-.film-wrap{
+.films {
+  border-bottom: 1px solid #d4d4d4;
+}
+.film-wrap {
   margin-top: 100px;
   margin-bottom: 200px;
   display: flex;
   flex-wrap: wrap;
 }
-.film-card{
+.film-card {
   margin-right: 32px;
   width: 250px;
   height: 300px;
+  transition: all 0.2s ease-in-out;
 }
-.film-img{
+.film-img {
   margin-bottom: 30px;
   width: 100%;
   height: 100%;
 }
-.film-name{
+.film-name {
   display: block;
   font-weight: bold;
   font-size: 22px;
@@ -472,37 +480,38 @@ body {
   margin-bottom: 30px;
   text-align: center;
 }
-.film-btns{
+.film-btns {
   display: flex;
   justify-content: space-between;
 }
-.btn-rat{
+.btn-rat {
   padding: 10px;
   font-weight: bold;
   font-size: 20px;
-  color: #5671F6;
-  border: 1px solid #5671F6;
+  color: #5671f6;
+  border: 1px solid #5671f6;
   border-radius: 5px;
 }
-.btn-go{
+.btn-go {
   text-decoration: none;
   padding: 10px;
   font-weight: bold;
   font-size: 20px;
-  color: #5671F6;
-  border: 1px solid #5671F6;
+  color: #5671f6;
+  border: 1px solid #5671f6;
   border-radius: 5px;
 }
-.btn-go:hover{
+.btn-go:hover {
   transition: all 400ms;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   cursor: pointer;
   color: #fff;
-  background: #5671F6;
+  background: #5671f6;
 }
-.film-card:hover{
+.film-card:hover {
   transition: all ease 500ms;
   box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.08);
+  transform: scale(1.1);
 }
 .ymap-container {
   width: 50%;
@@ -513,7 +522,7 @@ body {
   background: url('/./img/yandex-before-load-marker.jpg') #ffffff no-repeat;
   background-position: center center;
   background-size: cover;
-  box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
 }
 /* Блок, в котором появится Яндекс.Карта */
 #map-yandex {
@@ -526,60 +535,72 @@ body {
 }
 /* Индикатор загрузки, который показывается до загрузки карты */
 .loader {
-position: absolute;
-z-index: 15;
-top: -100%;
-left: 0;
-box-sizing: border-box;
-width: 100%;
-height: 100%;
-overflow: hidden;
-color: #000000;
-transition: opacity .7s ease;
-opacity: 0;
-background-color: rgba(0,0,0,.55);
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  transition: opacity 0.7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55);
 }
 
 .loader:after,
 .loader:before {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .loader.is-active {
-top: 0;
-opacity: 1;
+  top: 0;
+  opacity: 1;
 }
 
 .loader-default:after {
-position: absolute;
-top: calc(50% - 24px);
-left: calc(50% - 24px);
-width: 48px;
-height: 48px;
-content: '';
-animation: rotation 1s linear infinite;
-border: solid 8px #ffffff;
-border-left-color: transparent;
-border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
 }
 
-.heading{
+.heading {
   font-size: 50px;
   font-weight: bold;
-  margin-top: 100px;
+  padding-top: 100px;
+  margin: 0;
   text-align: center;
-  color: #5671F6;
+  color: #5671f6;
 }
-.footer-wrap{
+.heading-normal {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #a5a5a5;
+  padding-bottom: 20px;
+}
+.cinema-text {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.footer-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.info-blocks{
+.info-blocks {
   background: white;
-  box-shadow: 0 0 2em  0 rgba(0,0,0,.2);
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
 }
-.info-block{
+.info-block {
   text-align: center;
   font-weight: bold;
   padding: 20px;
@@ -587,36 +608,94 @@ border-radius: 50%;
   display: flex;
   flex-direction: column;
 }
-.footer-text{
+.footer-text {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.footer-mobile{
+.footer-mobile {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.footer-email{
+.footer-email {
   font-size: 24px;
 }
 .footer-email__mob,
-.footer-email__a{
+.footer-email__a {
   text-decoration: none;
   margin-left: 5px;
-  color: #5671F6;
+  color: #5671f6;
 }
 .footer-email__mob:hover,
-.footer-email__a:hover{
+.footer-email__a:hover {
   text-decoration: underline;
 }
-.footer-icons{
+.footer-icons {
   display: flex;
   margin: 0 auto;
 }
-.footer-icon{
+.footer-icon {
   margin-right: 35px;
   margin-top: 15px;
   width: 48px;
   height: 48px;
+}
+.cinema {
+  background-color: #f3f3f3;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d4d4d4;
+}
+.table {
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #d4d4d4;
+}
+.actually-wrap {
+  display: flex;
+}
+.actually-card {
+  margin-right: 32px;
+  width: 400px;
+  height: 300px;
+  background-color: #d4d4d4;
+  transition: all 0.2s ease-in-out;
+}
+.actually-card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.actually-popcorn {
+  background: url(../img/popcorn.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.actually-vr {
+  background: url(../img/vr.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.actually-curcle {
+  background: url(../img/curcle.png);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+.actually-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 15px;
+}
+.actually-heading {
+  color: #363636;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.actually-normal {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 1200px) {
