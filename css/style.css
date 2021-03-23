@@ -325,7 +325,7 @@ body {
   margin-bottom: 30px;
 }
 .news-card {
-  max-width: 200px;
+  max-width: 250px;
   text-align: left;
   padding: 30px 30px 36px 30px;
 }
@@ -697,7 +697,27 @@ body {
   font-weight: normal;
   margin-bottom: 5px;
 }
-
+.heading-photos {
+  margin-top: 100px;
+}
+.photos-slider {
+  box-shadow: 0 0 2em 0 rgba(0, 0, 0, 0.2);
+}
+.cinema1 {
+  max-width: 100%;
+  width: 1200px;
+  height: 500px;
+}
+.cinema2 {
+  max-width: 100%;
+  width: 1200px;
+  height: 500px;
+}
+.cinema3 {
+  max-width: 100%;
+  width: 1200px;
+  height: 500px;
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

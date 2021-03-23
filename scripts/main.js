@@ -1,9 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     let mySwiper = new Swiper('.actors-slider', {
-        loop: true,
+        loop: false,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
+        },
+        slidesPerView: 1,
+      });
+
+      let mySwiper1 = new Swiper('.photos-slider', {
+        loop: true,
+        autoplay: {
+          delay: 2500,
         },
         slidesPerView: 1,
       });
