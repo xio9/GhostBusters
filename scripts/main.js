@@ -16,6 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1,
       });
 
+      let mySwiper2 = new Swiper('.photos-slider1', {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+        },
+        slidesPerView: 1,
+      });
+
       let click = document.getElementById('button');
       button.addEventListener('click', function(){
         Swal.fire(
