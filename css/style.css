@@ -718,6 +718,20 @@ body {
   width: 1200px;
   height: 500px;
 }
+.photos-slider1 {
+  margin-top: 100px;
+}
+.main-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.main-block {
+  display: flex;
+  height: 100px;
+  width: 49%;
+  background-color: red;
+}
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;

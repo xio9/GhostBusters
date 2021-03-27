@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let mySwiper2 = new Swiper('.photos-slider1', {
         loop: true,
+        effect: 'flip',
+        grabCursor: true,
         autoplay: {
           delay: 2500,
         },
