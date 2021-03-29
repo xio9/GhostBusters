@@ -26,6 +26,19 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1,
       });
 
+      let mySwiper3 = new Swiper('.vr-slider', {
+        loop: false,
+        effect: 'cube',
+        grabCursor: true,
+        cubeEffect: {
+          shadow: false,
+        },
+        autoplay: {
+          delay: 2500,
+        },
+        slidesPerView: 1,
+      });
+
       let click = document.getElementById('button');
       button.addEventListener('click', function(){
         Swal.fire(

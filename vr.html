@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1cc1f8c2-125a-423a-acf6-66bff7efbd3d&lang=ru_RU"></script>
+</head>
+<body>
+    <header class="header">
+        <img class="logo" src="img/Film..svg" alt="">
+        <div class="line"></div>
+        <input type="text" class="search-input" placeholder="Поиск по фильмам...">
+        <nav class="navigation">
+            <a href="films.html" class="navigation-link">Главная</a>
+            <a href="index.html" class="navigation-link">Фильмы</a>
+            <a href="news.html" class="navigation-link">Новости</a>
+            <a href="about.html" class="navigation-link">О сервисе</a>
+        </nav>
+        <!-- /navigation -->
+        <div class="button-group">
+            <button id="button" class="button sign-up">Регистрация</button>
+            <button id="button1" class="button sign-in">Войти</button>
+        </div>
+        <!-- /button-group -->
+        <div class="mobile-buttons">
+            <button class="search-button"><img src="img/search-icon.svg" alt="search"></button>
+            <button class="m-menu-button">
+                <span><span class="menu-line"></span></span>
+                <span><span class="menu-line"></span></span>
+                <span><span class="menu-line"></span></span>
+            </button>
+        </div>
+        <!-- /mobile-buttons -->
+    </header> 
+    <section class="vr">
+        <div class="container">
+            <h1 class="heading">Название кинотеатра</h1>
+            <div class="vr-wrapper">
+                <div class="swiper-container vr-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="vr-card">
+                                <img class="vrCinema" src="./img/vrCinema.jpg" alt="">
+                                <h2 class="heading-normal">Фотографии нашего кинотеатра виртуальной реальности</h2>
+                            </div>
+                            <!-- /vr-card -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="vr-card">
+                                <img class="vrCinema" src="./img/vrCinema2.jpg" alt="">
+                                <h2 class="heading-normal">Фотографии нашего кинотеатра виртуальной реальности</h2>
+                            </div>
+                            <!-- /vr-card -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="vr-card">
+                                <img class="vrCinema" src="./img/vrCinema1.jpg" alt="">
+                                <h2 class="heading-normal">Фотографии нашего кинотеатра виртуальной реальности</h2>
+                            </div>
+                            <!-- /vr-card -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="vr-card">
+                                <h2 class="heading-bold">Информация про услугу</h2>
+                                <span class="vr-text"></span>
+                                <span class="vr-text"></span>
+                                <span class="vr-text"></span>
+                                <span class="vr-text"></span>
+                                <span class="vr-text"></span>
+                                <h2 class="heading-normal">Фотографии нашего кинотеатра виртуальной реальности</h2>
+                            </div>
+                            <!-- /vr-card -->
+                        </div>
+                    </div>
+                    <!-- /swiper-wrapper -->
+                </div>
+                <!-- /swiper-container -->
+                <div class="swiper-container vr-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="vr-card">
+                                <img class="vrCinema" src="./img/vrCinema.jpg" alt="">
+                                <h2 class="heading-normal">Фотографии нашего кинотеатра виртуальной реальности</h2>
+                            </div>
+                            <!-- /vr-card -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="vr-card">
+                                <img class="vrCinema" src="./img/vrCinema2.jpg" alt="">
+                                <h2 class="heading-normal">Фотографии нашего кинотеатра виртуальной реальности</h2>
+                            </div>
+                            <!-- /vr-card -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="vr-card">
+                                <img class="vrCinema" src="./img/vrCinema1.jpg" alt="">
+                                <h2 class="heading-normal">Фотографии нашего кинотеатра виртуальной реальности</h2>
+                            </div>
+                            <!-- /vr-card -->
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="vr-card">
+                                <h2 class="heading-bold">Информация про услугу</h2>
+                                <span class="vr-text"></span>
+                                <span class="vr-text"></span>
+                                <span class="vr-text"></span>
+                                <span class="vr-text"></span>
+                                <span class="vr-text"></span>
+                                <h2 class="heading-normal">Фотографии нашего кинотеатра виртуальной реальности</h2>
+                            </div>
+                            <!-- /vr-card -->
+                        </div>
+                    </div>
+                    <!-- /swiper-wrapper -->
+                </div>
+                <!-- /swiper-container -->
+            </div>
+            <!-- /vr-wrapper -->
+        </div>
+        <!-- /container -->
+    </section>
+    <!-- /vr -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="ymap-container">
+                    <div class="loader loader-default"></div>
+                    <div id="map-yandex"></div>
+                </div>
+                <!-- .ymap-container -->
+                <div class="info-blocks">
+                    <div class="info-block">
+                        <span class="footer-text">Подписывайся</span>
+                        <div class="footer-icons">
+                            <a href="#"><img class="footer-icon" src="./img/inst.svg" alt=""></a>
+                            <a href="#"><img class="footer-icon" src="./img/vk.svg" alt=""></a>
+                        </div>
+                        <!-- /footer-icons -->
+                    </div>
+                    <!-- /info-block -->
+                    <div class="info-block">
+                        <span class="footer-text">Контакты</span>
+                        <span class="footer-mobile">По вопросам <a class="footer-email__mob" href="+7 495 590-82-86">+7 495 590-82-86</a></span>
+                        <span class="footer-email">Почта <a class="footer-email__a" href="mailto:info@unost-cinema.ru">info@unost-cinema.ru</a></span>
+                    </div>
+                    <!-- /info-block -->
+                </div>
+                <!-- /info-blocks -->
+            </div>
+            <!-- /footer-wrap -->
+        </div>
+        <!-- /container -->
+    </footer>
+    <!-- /footer -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/jquery.fancybox.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body> 
+</html>

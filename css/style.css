@@ -593,6 +593,7 @@ body {
 }
 .footer-wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -763,6 +764,20 @@ body {
   font-size: 18px;
   font-weight: bold;
   color: #5671f6;
+}
+.vr-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.vr-slider {
+  width: 45%;
+}
+.vrCinema {
+  max-width: 100%;
+  width: 1200px;
+  height: 500px;
 }
 @media (max-width: 1200px) {
   .container {
